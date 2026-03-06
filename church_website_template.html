@@ -1,102 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Church Community</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grace Community Church</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+.hero{background-image:url('https://images.unsplash.com/photo-1507692049790-de58290a4334');background-size:cover;background-position:center}
+</style>
 </head>
-<body class="bg-gray-50 font-sans">
 
-  <!-- Navigation -->
-  <nav class="bg-white shadow">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
-      <h1 class="text-xl font-bold">Church Community</h1>
-      <div class="space-x-4">
-        <a href="#home">Home</a>
-        <a href="#events">Events</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Home Section -->
-  <section id="home" class="py-16 text-center">
-    <h2 class="text-4xl font-bold mb-4">Welcome to Our Church</h2>
-    <p class="text-lg max-w-2xl mx-auto">A place of worship, fellowship, and spiritual growth. Join us as we grow in faith and serve our community.</p>
-  </section>
+<!-- NAVBAR -->
+<nav class="bg-white shadow sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="text-2xl font-bold">Grace Church</h1>
 
-  <!-- Events Section -->
-  <section id="events" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">Upcoming Events</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-gray-100 rounded-2xl shadow">
-          <h3 class="font-bold">Youth Fellowship</h3>
-          <p>Every Saturday at 4 PM</p>
-        </div>
-        <div class="p-6 bg-gray-100 rounded-2xl shadow">
-          <h3 class="font-bold">Sunday Service</h3>
-          <p>Every Sunday at 9 AM</p>
-        </div>
-        <div class="p-6 bg-gray-100 rounded-2xl shadow">
-          <h3 class="font-bold">Community Outreach</h3>
-          <p>First Sunday of every month</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="hidden md:flex space-x-6 font-medium">
+<a href="#home" class="hover:text-blue-600">Home</a>
+<a href="#about" class="hover:text-blue-600">About</a>
+<a href="#ministries" class="hover:text-blue-600">Ministries</a>
+<a href="#events" class="hover:text-blue-600">Events</a>
+<a href="#sermons" class="hover:text-blue-600">Sermons</a>
+<a href="#gallery" class="hover:text-blue-600">Gallery</a>
+<a href="#blog" class="hover:text-blue-600">Blog</a>
+<a href="#contact" class="hover:text-blue-600">Contact</a>
+</div>
+</div>
+</nav>
 
-  <!-- Gallery -->
-  <section id="gallery" class="py-16">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">Gallery</h2>
-      <div class="grid md:grid-cols-3 gap-4">
-        <div class="bg-gray-300 h-40 rounded-xl"></div>
-        <div class="bg-gray-300 h-40 rounded-xl"></div>
-        <div class="bg-gray-300 h-40 rounded-xl"></div>
-        <div class="bg-gray-300 h-40 rounded-xl"></div>
-        <div class="bg-gray-300 h-40 rounded-xl"></div>
-        <div class="bg-gray-300 h-40 rounded-xl"></div>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
+<section id="home" class="hero h-[80vh] flex items-center justify-center text-center">
+<div class="bg-black/60 text-white p-10 rounded-2xl">
+<h2 class="text-5xl font-bold mb-4">Welcome to Grace Community Church</h2>
+<p class="text-lg">Loving God • Loving People • Serving the World</p>
+<button class="mt-6 bg-blue-600 px-6 py-3 rounded-xl">Join Us Sunday</button>
+</div>
+</section>
 
-  <!-- Blog -->
-  <section id="blog" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">Latest Blog Posts</h2>
-      <div class="space-y-6">
-        <div class="p-6 bg-gray-100 rounded-xl">
-          <h3 class="text-xl font-bold">Faith and Forgiveness</h3>
-          <p class="text-sm">A reflection on Isaiah 1:18 and God's promise to forgive.</p>
-        </div>
-        <div class="p-6 bg-gray-100 rounded-xl">
-          <h3 class="text-xl font-bold">Growing as a Youth in Christ</h3>
-          <p class="text-sm">Encouragement for young believers navigating life and faith.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ABOUT -->
+<section id="about" class="py-20">
+<div class="max-w-5xl mx-auto text-center px-6">
+<h2 class="text-3xl font-bold mb-6">About Our Church</h2>
+<p class="text-lg">Grace Community Church is a Christ-centered community dedicated to worship, discipleship, and serving others. We believe in growing together through faith, love, and the Word of God.</p>
+</div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16">
-    <div class="max-w-xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
-        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" />
-        <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg"></textarea>
-        <button class="bg-black text-white px-6 py-3 rounded-xl">Send Message</button>
-      </form>
-    </div>
-  </section>
+<!-- MINISTRIES -->
+<section id="ministries" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Our Ministries</h2>
 
-  <footer class="bg-black text-white text-center py-6">
-    <p>© 2026 Church Community. All Rights Reserved.</p>
-  </footer>
+<div class="grid md:grid-cols-4 gap-8">
+
+<div class="bg-gray-100 p-6 rounded-2xl shadow text-center">
+<h3 class="font-bold text-lg">Youth Ministry</h3>
+<p class="text-sm mt-2">Empowering young believers.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded-2xl shadow text-center">
+<h3 class="font-bold text-lg">Children's Ministry</h3>
+<p class="text-sm mt-2">Teaching kids the love of Christ.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded-2xl shadow text-center">
+<h3 class="font-bold text-lg">Worship Team</h3>
+<p class="text-sm mt-2">Leading the church in praise.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded-2xl shadow text-center">
+<h3 class="font-bold text-lg">Community Outreach</h3>
+<p class="text-sm mt-2">Serving and helping the community.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl">Sunday Worship</h3>
+<p class="mt-2">Every Sunday – 9:00 AM</p>
+<p class="text-sm mt-2">Join us for worship and the Word.</p>
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl">Youth Fellowship</h3>
+<p class="mt-2">Saturday – 4:00 PM</p>
+<p class="text-sm mt-2">Learning and fun together.</p>
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl">Prayer Night</h3>
+<p class="mt-2">Wednesday – 7:00 PM</p>
+<p class="text-sm mt-2">Seeking God together.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERMONS -->
+<section id="sermons" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Latest Sermons</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<iframe class="w-full rounded-xl" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+<iframe class="w-full rounded-xl" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+<iframe class="w-full rounded-xl" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Church Gallery</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+<img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65" class="rounded-xl">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="rounded-xl">
+<img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2" class="rounded-xl">
+<img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211" class="rounded-xl">
+<img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3" class="rounded-xl">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="rounded-xl">
+</div>
+</div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="py-20 bg-white">
+<div class="max-w-5xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Church Blog</h2>
+
+<div class="space-y-8">
+
+<div class="bg-gray-100 p-6 rounded-xl">
+<h3 class="text-xl font-bold">God's Promise of Forgiveness</h3>
+<p class="text-sm mt-2">Isaiah 1:18 – Though your sins are like scarlet, they shall be white as snow.</p>
+</div>
+
+<div class="bg-gray-100 p-6 rounded-xl">
+<h3 class="text-xl font-bold">Walking in Faith</h3>
+<p class="text-sm mt-2">Trusting God in uncertain times.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PRAYER REQUEST -->
+<section class="py-20">
+<div class="max-w-xl mx-auto text-center px-6">
+<h2 class="text-3xl font-bold mb-6">Submit a Prayer Request</h2>
+
+<form class="space-y-4">
+<input type="text" placeholder="Your Name" class="w-full border p-3 rounded-lg">
+<textarea placeholder="Your Prayer Request" class="w-full border p-3 rounded-lg"></textarea>
+<button class="bg-blue-600 text-white px-6 py-3 rounded-xl">Send Prayer Request</button>
+</form>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white">
+<div class="max-w-xl mx-auto text-center px-6">
+<h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+
+<form class="space-y-4">
+<input type="text" placeholder="Your Name" class="w-full border p-3 rounded-lg">
+<input type="email" placeholder="Your Email" class="w-full border p-3 rounded-lg">
+<textarea placeholder="Your Message" class="w-full border p-3 rounded-lg"></textarea>
+<button class="bg-blue-600 text-white px-6 py-3 rounded-xl">Send Message</button>
+</form>
+
+</div>
+</section>
+
+<footer class="bg-black text-white py-8 text-center">
+<p>© 2026 Grace Community Church</p>
+</footer>
 
 </body>
 </html>
+
